@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python mycode.py
+    deps:
+      - mycode.py
+    outs:
+      - data/sample_data.csv:
+          cache: true
